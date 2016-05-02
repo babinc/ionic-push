@@ -1,0 +1,27 @@
+{
+    "name": "ionic-push",
+    "version": "1.0.0",
+    "description": "Easy API for using ionics push notifications",
+    "main": "index.js",
+    "dependencies": {
+        "https": "^1.0.0",
+        "q": "^1.4.1"
+    },
+    "keywords": [
+        "ionic",
+        "iOS",
+        "android",
+        "push"
+    ],
+    "devDependencies": {},
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/babinc/ionic-push.git"
+    },
+    "author": "Carman Babin",
+    "license": "GNU General Public License v3"
+}
