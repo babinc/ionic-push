@@ -10,7 +10,7 @@ $ npm install --save simple-ionic-push
 
 ##Require the package
 ```javascript
-var ionicPush = require('ionic-push')('Your API Token from Ionic');
+var ionicPush = require('simple-ionic-push')('Your API Token from Ionic');
 ```
 
 Pushes will return a promise, and passed the success or error responses from the Ionic API.
