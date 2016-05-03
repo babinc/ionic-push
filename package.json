@@ -1,6 +1,6 @@
 {
     "name": "simple-ionic-push",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Easy API for using ionics push notifications, with promises",
     "main": "index.js",
     "dependencies": {
@@ -20,7 +20,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/babinc/ionic-push.git"
+        "url": "https://github.com/babinc/simple-ionic-push"
     },
     "author": "Carman Babin",
     "license": "GNU General Public License v3"

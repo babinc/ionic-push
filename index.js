@@ -3,23 +3,22 @@
 var https = require('https');
 var q = require('q');
 
-var IonicPush = function(apiKey) {
-
-  if (!(this instanceof IonicPush)) {
-    return new IonicPush(apiKey);
+var SimpleIonicPush = function(apiKey) {
+  if (!(this instanceof SimpleIonicPush)) {
+    return new SimpleIonicPush(apiKey);
   }
-  
-  //check if given an apiKey
+
+  //Set API Key
   if (typeof apiKey === 'string') {
     this.key = apiKey;
   }
   else {
-    throw new Error('Need an apiKey for IonicPush');
+    throw new Error('Simple-Ionic-Push Key must be in string format');
   }
 
   var send = function(notification) {
     var deferred = q.defer();
-    
+
     var options = {
       hostname: 'api.ionic.io',
       path: '/push/notifications',
@@ -46,11 +45,10 @@ var IonicPush = function(apiKey) {
 
     return deferred.promise;
   };
-  
+
   // expose public API
   this.send = send;
   return this;
-
 };
 
-module.exports = IonicPush;
+module.exports = SimpleIonicPush;
